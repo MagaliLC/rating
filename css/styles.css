@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+    background-color: #FFDFD3;
+}
+
+i {
+    color: #D291BC;
+}
+
+.rated {
+    color: #957DAD;
+}
+
+.rating {
+    transform: rotateY(180deg);
+}
+
+.rating i::before {
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.rating>i:hover::before,
+.rating>i:hover~i::before {
+    color: #957DAD;
+    transition: .5s;
+}
